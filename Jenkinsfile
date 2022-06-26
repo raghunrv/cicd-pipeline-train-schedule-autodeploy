@@ -4,6 +4,7 @@ pipeline {
         //be sure to replace "Raghuvamshinrv" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "Raghuvamshinrv/train-schedule"
     }
+    // just adding the comment 
     stages {
         //#stage('Build') {
          //#   steps {
@@ -13,9 +14,9 @@ pipeline {
           //  #}
         //}
         stage('Build Docker Image') {
-            when {
-                branch 'master'
-            }
+           // when {
+           //     branch 'master'
+            //}
             steps {
                 script {
                     app = docker.build(DOCKER_IMAGE_NAME)
