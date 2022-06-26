@@ -4,7 +4,7 @@ pipeline {
         //be sure to replace "Raghuvamshinrv" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "Raghuvamshinrv/train-schedule"
     }
-    // just adding the comment 
+    // just  
     stages {
         //#stage('Build') {
          //#   steps {
