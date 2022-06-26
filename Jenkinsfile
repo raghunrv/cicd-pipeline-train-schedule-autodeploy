@@ -4,7 +4,7 @@ pipeline {
         //be sure to replace "Raghuvamshinrv" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "Raghuvamshinrv/train-schedule"
     }
-   // updated to test
+   // updated to testing
     stages {
         //#stage('Build') {
          //#   steps {
@@ -27,9 +27,9 @@ pipeline {
             }
         }
         stage('Push Docker Image') {
-            when {
-                branch 'master'
-            }
+           // when {
+            //    branch 'master'
+          //  }
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'docker_hub_login') {
